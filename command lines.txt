@@ -1,0 +1,4 @@
+az group create --name mo10serek-cst8918-tf-backend --location westus3
+az storage account create --name 3b36c431tfstorage --resource-group mo10serek-cst8918-tf-backend --location westus3 --sku Standard_LRS
+az storage container create --name tfstate --account-name 3b36c431tfstorage
+az storage account keys list --account-name 3b36c431tfstorage --resource-group mo10serek-cst8918-tf-backend
